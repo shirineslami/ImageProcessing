@@ -1,0 +1,6 @@
+function output = f_permution_box()
+% In this function produces final permution box in f function.
+output = [16 , 1 , 2 , 19 , 7 , 15 , 8 , 13 , 20 , 23 , 24 ,...
+          30, 21 , 26 , 14 , 6 , 29 , 5 , 32 , 22 , 12 , 18 ,...
+          27 , 11 , 28 , 31 , 3 , 4 , 17  10 , 9 , 25];
+       
