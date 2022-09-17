@@ -1,0 +1,42 @@
+function [im1, im2, im3, im4, im5, im6, im7, im8] = bit_plate(im)
+
+%    R1=zeros(); R2=zeros(); R3=zeros(); R4=zeros();
+%    R5=zeros(); R6=zeros(); R7=zeros(); R8=zeros();
+ %   im1=zeros(); im2=zeros(); im3=zeros(); im4=zeros();
+  %  im5=zeros(); im6=zeros(); im7=zeros(); im8=zeros();
+[h , w , ~] = size(im);
+for x = 1 : h
+    for y = 1 : w
+        temp = dec2binvec(im(x,y,1),8);
+        R1(x,y,1) = double(temp(1));
+        R2(x,y,1) = double(temp(2));
+        R3(x,y,1) = double(temp(3));
+        R4(x,y,1) = double(temp(4));
+        R5(x,y,1) = double(temp(5));
+        R6(x,y,1) = double(temp(6));
+        R7(x,y,1) = double(temp(7));
+        R8(x,y,1) = double(temp(8));
+        
+        temp = dec2binvec(im(x,y,2),8);
+        R1(x,y,2) = double(temp(1));
+        R2(x,y,2) = double(temp(2));
+        R3(x,y,2) = double(temp(3));
+        R4(x,y,2) = double(temp(4));
+        R5(x,y,2) = double(temp(5));
+        R6(x,y,2) = double(temp(6));
+        R7(x,y,2) = double(temp(7));
+        R8(x,y,2) = double(temp(8));
+        
+        temp = dec2binvec(im(x,y,3),8);
+        R1(x,y,3) = double(temp(1));
+        R2(x,y,3) = double(temp(2));
+        R3(x,y,3) = double(temp(3));
+        R4(x,y,3) = double(temp(4));
+        R5(x,y,3) = double(temp(5));
+        R6(x,y,3) = double(temp(6));
+        R7(x,y,3) = double(temp(7));
+        R8(x,y,3) = double(temp(8));
+    end
+end
+
+im1=R1;im2=R2;
